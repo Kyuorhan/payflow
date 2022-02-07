@@ -16,7 +16,7 @@ class GoogleLoginButton extends StatelessWidget {
         decoration: BoxDecoration(
             color: AppColors.shape,
             borderRadius: BorderRadius.circular(5),
-            border: Border.fromBorderSide(BorderSide(
+            border: const Border.fromBorderSide(BorderSide(
               color: AppColors.stroke,
             ))),
         child: Row(
@@ -27,7 +27,7 @@ class GoogleLoginButton extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(AppImages.google),
-                    SizedBox(
+                    const SizedBox(
                       width: 16,
                     ),
                     Container(
@@ -38,7 +38,7 @@ class GoogleLoginButton extends StatelessWidget {
                   ],
                 )),
             Expanded(
-              flex: 5,
+              flex: 3,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

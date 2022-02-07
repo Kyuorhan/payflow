@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+//import 'package:google_sign_in/google_sign_in.dart';
 import 'package:payflow/shared/themes/app_colors.dart';
 import 'package:payflow/shared/themes/app_images.dart';
 import 'package:payflow/shared/themes/app_text_style.dart';
 import 'package:payflow/shared/widgets/social_login/google_login_button.dart';
+import 'package:payflow/src/modules/login/Login_controller.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({Key? key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final controller = LoginController();
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size; // Pega o tamanho da tela
@@ -59,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
                         const EdgeInsets.only(top: 40, left: 40, right: 40),
                     child: GoogleLoginButton(
                       onTap: () {
-                        print("clicou!");
+                        controller.googleSignI(context);
                       },
                     ),
                   )
