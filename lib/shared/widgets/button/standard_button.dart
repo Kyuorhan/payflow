@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:payflow/shared/themes/app_text_style.dart';
 
-class LabelButton extends StatelessWidget {
+class StandardButton extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;
-  const LabelButton({
+  const StandardButton({
     Key? key,
     required this.label,
     required this.onPressed,
