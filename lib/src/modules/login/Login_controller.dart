@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, avoid_print
+// ignore_for_file: avoid_print
 
 import 'package:flutter/cupertino.dart';
 import 'package:google_sign_in/google_sign_in.dart';

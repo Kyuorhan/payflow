@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:payflow/shared/widgets/button/standard_button.dart';
+import 'package:payflow/shared/widgets/divider/divide_vertical.dart';
 
-import '../divider/divide_vertical.dart';
-import 'label_button.dart';
-
-class SetLabelButtons extends StatelessWidget {
+class SetBarcodeScannerButtons extends StatelessWidget {
   final String primaryLabel;
   final VoidCallback primaryOnPressed;
   final String secondaryLabel;
   final VoidCallback secondaryOnPressed;
-  const SetLabelButtons({
+  const SetBarcodeScannerButtons({
     Key? key,
     required this.primaryLabel,
     required this.primaryOnPressed,
@@ -19,21 +18,17 @@ class SetLabelButtons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 58,
+      height: 56,
       child: Row(
         children: [
           Expanded(
-            child: LabelButton(
-              label: primaryLabel,
-              onPressed: primaryOnPressed,
-            ),
+            child: StandardButton(
+                label: primaryLabel, onPressed: primaryOnPressed),
           ),
           const DividerVertical(),
           Expanded(
-            child: LabelButton(
-              label: secondaryLabel,
-              onPressed: secondaryOnPressed,
-            ),
+            child: StandardButton(
+                label: secondaryLabel, onPressed: secondaryOnPressed),
           ),
         ],
       ),
