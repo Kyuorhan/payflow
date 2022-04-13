@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:payflow/shared/themes/app_colors.dart';
 import 'package:payflow/shared/themes/app_images.dart';
 import 'package:payflow/shared/themes/app_text_style.dart';
-import 'package:payflow/shared/widgets/social_login/google_login_button.dart';
+import 'package:payflow/shared/widgets/button/social_login/google_login_button.dart';
 import 'package:payflow/src/modules/login/Login_controller.dart';
 
 class LoginPage extends StatefulWidget {

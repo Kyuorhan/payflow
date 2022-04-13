@@ -88,6 +88,11 @@ class TextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.background,
   );
+  static final captionPrimary = GoogleFonts.inter(
+    fontSize: 13,
+    fontWeight: FontWeight.w400,
+    color: AppColors.primary,
+  );
   static final captionShape = GoogleFonts.inter(
     fontSize: 13,
     fontWeight: FontWeight.w400,
@@ -102,6 +107,11 @@ class TextStyles {
     fontSize: 13,
     fontWeight: FontWeight.w600,
     color: AppColors.background,
+  );
+  static final captionBoldPrimary = GoogleFonts.inter(
+    fontSize: 13,
+    fontWeight: FontWeight.w600,
+    color: AppColors.primary,
   );
   static final captionBoldShape = GoogleFonts.inter(
     fontSize: 13,
