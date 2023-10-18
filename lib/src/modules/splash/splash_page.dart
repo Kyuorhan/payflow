@@ -35,74 +35,97 @@ class SplashPage extends StatelessWidget {
   }
 }
 
-/*
-class SplashPage extends StatefulWidget {
-  const SplashPage({super.key});
 
-  @override
-  State<SplashPage> createState() => _SplashPageState();
-}
+// class SplashPage extends StatefulWidget {
+//   const SplashPage({super.key});
 
+//   @override
+//   State<SplashPage> createState() => _SplashPageState();
+// }
 
-class _SplashPageState extends State<SplashPage> {
-  @override
-  Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    const duration = Duration(milliseconds: 500);
-    const double opacity = 1;
-    /*
-    double opacity = 1;
-    for (var i = 0; i <= 3; i++) {
-      if (opacity <= 0.5) {
-        opacity = 1;
-      } else {
-        opacity = 0.5;
-      }
-    }
-    */
+// class _SplashPageState extends State<SplashPage>
+//     with SingleTickerProviderStateMixin {
+//   late final AnimationController controller;
+//   late final Animation opacityController;
 
-    animatedOpacity() {
-      for (var i = 0; i <= 3; i++) {
-        if (opacity <= 0.5) {
-          // opacity = 1;
-          return 1.0;
-        } else {
-          return 0.5;
-        }
-      }
-    }
+//   @override
+//   void initState() {
+//     super.initState();
+//     controller = AnimationController(
+//       vsync: this,
+//       duration: Duration(seconds: 2),
+//     );
+//     opacityController:
+//     Tween<double>(begin: 1, end: 0.5).animate(controller);
+//   }
 
-    return Scaffold(
-      backgroundColor: AppColors.background,
-      body: Stack(
-        children: [
-          Center(
-            child: AnimatedOpacity(
-              curve: Curves.linear,
-              opacity: opacity,
-              duration: duration,
-              child: Image.asset(
-                AppImages.logoFull,
-                width: size.width * 0.3,
-                height: size.height * 0.3,
-              ),
-            ),
-          ),
-          Center(
-            child: AnimatedOpacity(
-              curve: Curves.linear,
-              opacity: opacity,
-              duration: duration,
-              child: Image.asset(
-                AppImages.union,
-                width: size.width * 0.5,
-                height: size.height * 0.5,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-*/
+//   @override
+//   Widget build(BuildContext context) {
+//     Size size = MediaQuery.of(context).size;
+//     const duration = Duration(milliseconds: 500);
+//     // const double opacity = 1;
+//     /*
+//     double opacity = 1;
+//     for (var i = 0; i <= 3; i++) {
+//       if (opacity <= 0.5) {
+//         opacity = 1;
+//       } else {
+//         opacity = 0.5;
+//       }
+//     }
+//     */
+
+//     // animatedOpacity() {
+//     //   for (var i = 0; i <= 3; i++) {
+//     //     if (opacity <= 0.5) {
+//     //       // opacity = 1;
+//     //       return 1.0;
+//     //     } else {
+//     //       return 0.5;
+//     //     }
+//     //   }
+//     // }
+
+//     return Scaffold(
+//       backgroundColor: AppColors.background,
+//       body: Stack(
+//         children: [
+//           Center(
+//             child: GestureDetector(
+//               onTap: () {
+//                 controller.repeat();
+//               },
+//               child: Builder(
+//                 builder: (context) {
+//                   return AnimatedOpacity(
+//                     curve: Curves.linear,
+//                     opacity: opacityController.value,
+//                     duration: duration,
+//                     child: Image.asset(
+//                       AppImages.logoFull,
+//                       width: size.width * 0.3,
+//                       height: size.height * 0.3,
+//                     ),
+//                   );
+//                 }
+//               ),
+//             ),
+//           ),
+          
+//           // Center(
+//           //   child: AnimatedOpacity(
+//           //     curve: Curves.linear,
+//           //     opacity: opacityController.value,
+//           //     duration: duration,
+//           //     child: Image.asset(
+//           //       AppImages.union,
+//           //       width: size.width * 0.5,
+//           //       height: size.height * 0.5,
+//           //     ),
+//           //   ),
+//           // ),
+//         ],
+//       ),
+//     );
+//   }
+// }
