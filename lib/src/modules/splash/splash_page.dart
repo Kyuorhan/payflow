@@ -34,47 +34,44 @@ class _SplashPageState extends State<SplashPage>
     });
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-    SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual,
-      overlays: SystemUiOverlay.values,
-    );
-    // SystemChrome.setSystemUIOverlayStyle(
-    //   const SystemUiOverlayStyle(
-    //     statusBarIconBrightness: Brightness.light,
-    //   ),
-    // );
-    // [SystemUiOverlayStyle.statusBarColor]
-  }
+  // @override
+  // void dispose() {
+  //   super.dispose();
+  //   SystemChrome.restoreSystemUIOverlays();
+  //   // SystemChrome.setSystemUIOverlayStyle(
+  //   //   const SystemUiOverlayStyle(
+  //   //     statusBarIconBrightness: Brightness.light,
+  //   //   ),
+  //   // );
+  //   // [SystemUiOverlayStyle.statusBarColor]
+  // }
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    // Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: AppColors.background,
-      // appBar: AppBar(backgroundColor: AppColors.primary),
-      resizeToAvoidBottomInset: true,
-      body: Stack(
-        children: [
-          Center(
-            child: Image.asset(
-              AppImages.union,
-              width: size.width * 0.75,
-              height: size.height * 0.75,
-              // fit: BoxFit.cover,
+      extendBody: true,
+      extendBodyBehindAppBar: true,
+      body: LayoutBuilder(builder: (context, constraints) {
+        return Stack(
+          children: [
+            Center(
+              child: Image.asset(
+                AppImages.union,
+                width: constraints.maxWidth * 0.6,
+                // fit: BoxFit.cover,
+              ),
             ),
-          ),
-          Center(
-            child: Image.asset(
-              AppImages.logoFull,
-              width: size.width * 0.3,
-              height: size.height * 0.3,
+            Center(
+              child: Image.asset(
+                AppImages.logoFull,
+                width: constraints.maxWidth * 0.32,
+              ),
             ),
-          ),
-        ],
-      ),
+          ],
+        );
+      }),
     );
   }
 }

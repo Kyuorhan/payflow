@@ -31,6 +31,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_launcher_icons: ^0.13.1
 
+
+# flutter pub add flutter_launcher_icons
 # Run commands to generate icon
 # flutter pub run flutter_launcher_icons:main
 
