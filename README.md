@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Logo" src=".github/payflow-logo.png" width="200em">
+  <img alt="PayFlow" src=".github/Thumbnail.svg">
 </p>
 
 ###
@@ -47,7 +47,7 @@ O projeto **PayFlow** foi desenvolvido de um propósito de espalhar conhecimento
 ##
 
 <p align="center">
-  <img alt="Layout" title="PayFlow" src=".github/capa.png" />
+  <img alt="Layout" title="PayFlow" src=".github/Project.svg" />
 </p>
 
 <p align="center">O Layout foi desenvolvido por <a href="https://www.instagram.com/kyuorhan">Jhonny Kyuorhan</a>, e você pode acessá-lo no Figma:</p>
@@ -56,7 +56,7 @@ O projeto **PayFlow** foi desenvolvido de um propósito de espalhar conhecimento
 
 <p> 
     
-  >- [Mobile](https://www.figma.com/community/file/1352388163173966368) 📱
+  >- [Mobile](https://www.figma.com/community/file/1352388163173966368/payflow) 📱
 </p>
 
 <br>
