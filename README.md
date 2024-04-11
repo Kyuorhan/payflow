@@ -47,7 +47,7 @@ O projeto **PayFlow** foi desenvolvido de um propósito de espalhar conhecimento
 ##
 
 <p align="center">
-  <img alt="Layout" title="PayFlow" src=".github/Project.svg" />
+  <img alt="Layout" title="PayFlow" src=".github/Project.png" />
 </p>
 
 <p align="center">O Layout foi desenvolvido por <a href="https://www.instagram.com/kyuorhan">Jhonny Kyuorhan</a>, e você pode acessá-lo no Figma:</p>
