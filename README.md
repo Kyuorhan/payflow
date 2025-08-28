@@ -1,14 +1,15 @@
 # PayFlow
 
 <div align="center">
-  <img src="./.github/Thumbnail.png" alt="PayFlow - Gerenciador de Boletos" width="600" height="auto">
+  <img src="./.github/Thumbnail.svg" alt="PayFlow - Gerenciador de Boletos" width="100%" height="auto">
   
   <p align="center">
-    <strong>Aplicativo mobile para gerenciamento inteligente de boletos</strong>
-  </p>
+    <strong>Aplicativo mo---
 
-</details>ligente de boletos</strong><br>
+## 📐 Design Systemamento inteligente de boletos</strong><br>
+
     Desenvolvido com React Native + Expo
+
   </p>
 
   <div align="center">
@@ -162,15 +163,17 @@ npm run web
 
 <div align="center">
 
-**⚠️ Limitação do GitHub: Não é possível ter preview interativo igual ao site do Figma Community**
-
-O GitHub não suporta iframes ou embeds interativos por questões de segurança. Para interagir com o design como na web, você precisa acessar diretamente o Figma:
+**Clique na imagem abaixo para abrir o design no Figma Community:**
 
 <br>
 
 <a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
-  <img src="https://img.shields.io/badge/🎨_Abrir_no_Figma_Community-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Abrir no Figma Community">
+  <img src="./.github/Project.svg" alt="PayFlow Design - Clique para abrir no Figma Community" width="100%" style="max-width: 800px;  border-radius: 12px; cursor: pointer;">
 </a>
+
+<br>
+
+<em>👆 <strong>Clique na imagem acima para abrir o Figma Community</strong></em>
 
 <br><br>
 
