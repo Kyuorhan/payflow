@@ -168,7 +168,7 @@ npm run web
 <br>
 
 <a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
-  <img src="./.github/Project.svg" alt="PayFlow Design - Clique para abrir no Figma Community" width="100%" style="max-width: 800px;  border-radius: 12px; cursor: pointer;">
+  <img src="./.github/Project.png" alt="PayFlow Design - Clique para abrir no Figma Community" width="100%" style="max-width: 800px;  border-radius: 12px; cursor: pointer;">
 </a>
 
 <br>
