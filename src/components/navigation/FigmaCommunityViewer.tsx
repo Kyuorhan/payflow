@@ -23,7 +23,7 @@ interface FigmaCommunityViewerProps {
 export function FigmaCommunityViewer({
   fileId,
   title = "PayFlow Design System",
-  author = "Noah Entregas", 
+  author = "Noah Entregas",
   description = "Sistema de design completo para aplicativo de gerenciamento de boletos",
 }: FigmaCommunityViewerProps) {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -54,9 +54,9 @@ export function FigmaCommunityViewer({
               <Text style={styles.author}>por {author}</Text>
             </View>
           </View>
-          
+
           <View style={styles.actions}>
-            <TouchableOpacity 
+            <TouchableOpacity
               style={styles.actionButton}
               onPress={() => setIsFullscreen(true)}
             >
@@ -70,15 +70,23 @@ export function FigmaCommunityViewer({
         <View style={styles.previewFrame}>
           <View style={styles.browserBar}>
             <View style={styles.browserControls}>
-              <View style={[styles.browserButton, { backgroundColor: '#FF5F57' }]} />
-              <View style={[styles.browserButton, { backgroundColor: '#FEBC30' }]} />
-              <View style={[styles.browserButton, { backgroundColor: '#28CA42' }]} />
+              <View
+                style={[styles.browserButton, { backgroundColor: "#FF5F57" }]}
+              />
+              <View
+                style={[styles.browserButton, { backgroundColor: "#FEBC30" }]}
+              />
+              <View
+                style={[styles.browserButton, { backgroundColor: "#28CA42" }]}
+              />
             </View>
             <View style={styles.urlBar}>
-              <Text style={styles.urlText}>figma.com/community/file/{fileId}</Text>
+              <Text style={styles.urlText}>
+                figma.com/community/file/{fileId}
+              </Text>
             </View>
           </View>
-          
+
           <View style={styles.figmaInterface}>
             {/* Figma-like toolbar */}
             <View style={styles.figmaToolbar}>
@@ -92,7 +100,7 @@ export function FigmaCommunityViewer({
                 </TouchableOpacity>
               </View>
             </View>
-            
+
             {/* Canvas preview */}
             <View style={styles.canvas}>
               <View style={styles.deviceFrame}>
@@ -106,17 +114,26 @@ export function FigmaCommunityViewer({
                     <View style={styles.mockContent}>
                       <View style={styles.mockCard} />
                       <View style={styles.mockCard} />
-                      <View style={[styles.mockCard, { backgroundColor: '#6C5CE7' }]} />
+                      <View
+                        style={[
+                          styles.mockCard,
+                          { backgroundColor: "#6C5CE7" },
+                        ]}
+                      />
                     </View>
                   </View>
                 </View>
               </View>
-              
+
               {/* Layers panel */}
               <View style={styles.layersPanel}>
                 <Text style={styles.panelTitle}>Layers</Text>
                 <View style={styles.layerItem}>
-                  <Ionicons name="phone-portrait-outline" size={14} color="#666" />
+                  <Ionicons
+                    name="phone-portrait-outline"
+                    size={14}
+                    color="#666"
+                  />
                   <Text style={styles.layerText}>iPhone 14 Pro</Text>
                 </View>
                 <View style={styles.layerItem}>
@@ -153,12 +170,17 @@ export function FigmaCommunityViewer({
             >
               <Ionicons name="close" size={24} color="#fff" />
             </TouchableOpacity>
-            <Text style={styles.fullscreenTitle}>PayFlow - Figma Community</Text>
-            <TouchableOpacity style={styles.openExternalButton} onPress={openFigma}>
+            <Text style={styles.fullscreenTitle}>
+              PayFlow - Figma Community
+            </Text>
+            <TouchableOpacity
+              style={styles.openExternalButton}
+              onPress={openFigma}
+            >
               <Ionicons name="open-outline" size={24} color="#fff" />
             </TouchableOpacity>
           </View>
-          
+
           {/* Fullscreen preview */}
           <View style={styles.fullscreenContent}>
             <View style={styles.fullscreenCanvas}>
@@ -172,19 +194,33 @@ export function FigmaCommunityViewer({
                     <View style={styles.mockContent}>
                       <View style={styles.mockCard} />
                       <View style={styles.mockCard} />
-                      <View style={[styles.mockCard, { backgroundColor: '#6C5CE7' }]} />
+                      <View
+                        style={[
+                          styles.mockCard,
+                          { backgroundColor: "#6C5CE7" },
+                        ]}
+                      />
                       <View style={styles.mockCard} />
                     </View>
                   </View>
                 </View>
               </View>
-              
+
               <View style={styles.fullscreenInfo}>
-                <Text style={styles.fullscreenInfoTitle}>Interaja com o protótipo</Text>
-                <Text style={styles.fullscreenInfoDesc}>Toque no botão abaixo para abrir o projeto no Figma Community</Text>
-                <TouchableOpacity style={styles.fullscreenOpenButton} onPress={openFigma}>
+                <Text style={styles.fullscreenInfoTitle}>
+                  Interaja com o protótipo
+                </Text>
+                <Text style={styles.fullscreenInfoDesc}>
+                  Toque no botão abaixo para abrir o projeto no Figma Community
+                </Text>
+                <TouchableOpacity
+                  style={styles.fullscreenOpenButton}
+                  onPress={openFigma}
+                >
                   <Ionicons name="logo-figma" size={20} color="#fff" />
-                  <Text style={styles.fullscreenOpenText}>Abrir no Figma Community</Text>
+                  <Text style={styles.fullscreenOpenText}>
+                    Abrir no Figma Community
+                  </Text>
                 </TouchableOpacity>
               </View>
             </View>

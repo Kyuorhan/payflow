@@ -90,6 +90,7 @@ O **PayFlow** é um aplicativo mobile desenvolvido para facilitar o gerenciament
 ### 📋 Pré-requisitos
 
 **Ambiente de Desenvolvimento:**
+
 ```bash
 Node.js >= 18.0.0
 npm >= 9.0.0 ou yarn >= 1.22.0
@@ -98,19 +99,21 @@ Git >= 2.30.0
 
 **Para testar no dispositivo físico:**
 
-| Método | Descrição | Requisitos |
-|--------|-----------|------------|
-| **Expo Go** *(Recomendado)* | App gratuito para testar rapidamente | [📱 iOS](https://apps.apple.com/app/expo-go/id982107779) \| [🤖 Android](https://play.google.com/store/apps/details?id=host.exp.exponent) |
-| **Expo CLI** | Desenvolvimento local completo | `npm install -g @expo/cli@latest` |
-| **EAS Build** | Builds nativos de produção | `npm install -g eas-cli@latest` |
+| Método                      | Descrição                            | Requisitos                                                                                                                                |
+| --------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Expo Go** _(Recomendado)_ | App gratuito para testar rapidamente | [📱 iOS](https://apps.apple.com/app/expo-go/id982107779) \| [🤖 Android](https://play.google.com/store/apps/details?id=host.exp.exponent) |
+| **Expo CLI**                | Desenvolvimento local completo       | `npm install -g @expo/cli@latest`                                                                                                         |
+| **EAS Build**               | Builds nativos de produção           | `npm install -g eas-cli@latest`                                                                                                           |
 
 **Para builds nativos (opcional):**
+
 - **iOS**: macOS + Xcode 15+ (para executar em simulador)
 - **Android**: Android Studio + Java JDK 17 (para executar em emulador)
 
 ### ⚡ Instalação e Execução
 
 **1. Clone e configure o projeto:**
+
 ```bash
 # Clone o repositório
 git clone https://github.com/Kyuorhan/payflow.git
@@ -126,10 +129,12 @@ npm start
 **2. Execute no seu dispositivo:**
 
 **📱 Expo Go (Mais rápido):**
+
 - Escaneie o QR Code que aparece no terminal
 - Abra automaticamente no app Expo Go
 
 **🔧 Build Local:**
+
 ```bash
 # iOS (requer macOS + Xcode)
 npm run ios
@@ -150,26 +155,84 @@ npm run web
   <strong>Figma Community</strong>
 </div>
 
-Explore o design system completo e interaja com o protótipo navegável do PayFlow:
+## 🎨 Design & Protótipo
 
 <div align="center">
-  
-**🎯 Protótipo Interativo**
+  <img src="./docs/assets/figma-icon.svg" width="24" height="24" alt="Figma">
+  <strong>Figma Community</strong>
+</div>
 
+### 📱 Preview Interativo do Design
+
+<div align="center">
+
+<!-- Figma Preview Image with Link -->
 <a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
-  <img src="https://img.shields.io/badge/🎨_Ver_no_Figma_Community-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Ver no Figma Community">
+  <img src="./docs/assets/figma-preview.svg" alt="PayFlow Figma Preview" width="100%" style="max-width: 800px; border-radius: 12px; border: 1px solid #e9ecef;">
 </a>
 
-<p><em>Navegue pelas telas, teste interações e experimente o fluxo completo do usuário</em></p>
+<p><em>👆 <strong>Clique na imagem acima</strong> para abrir e interagir com o design no Figma Community</em></p>
 
-| Feature | Descrição |
-|---------|-----------|
-| **🖼️ Design System** | Componentes, cores e tipografia padronizados |
-| **📱 Protótipo Mobile** | Fluxo navegável para iOS e Android |
-| **🎯 Interações** | Botões, transições e micro-animações |
-| **📐 Specs Técnicas** | Medidas e especificações para desenvolvimento |
+<!-- Direct Links -->
+<div style="margin: 20px 0;">
+
+<a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
+  <img src="https://img.shields.io/badge/🎨_Abrir_no_Figma_Community-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Ver no Figma Community">
+</a>
+
+&nbsp;&nbsp;
+
+<a href="https://www.figma.com/proto/1352388163173966368/payflow?node-id=1%3A2&scaling=scale-down&page-id=0%3A1" target="_blank">
+  <img src="https://img.shields.io/badge/🖱️_Protótipo_Interativo-4630EB?style=for-the-badge&logo=figma&logoColor=white" alt="Protótipo Interativo">
+</a>
 
 </div>
+
+<!-- GitHub Preview Alternative -->
+<details>
+<summary>📋 <strong>Ver specs técnicas e componentes</strong></summary>
+
+<br>
+
+**🎯 Design System Components**
+
+| Componente | Figma Layer | Especificações |
+|------------|-------------|----------------|
+| **Header** | `Header/Primary` | Background: `#6C5CE7`, Height: `60px` |
+| **Card** | `Cards/Bill Card` | Radius: `8px`, Shadow: `0 2px 8px rgba(0,0,0,0.1)` |
+| **Button** | `Buttons/Primary` | Background: `#6C5CE7`, Radius: `6px` |
+| **Typography** | `Text/Heading` | Font: `Roboto Medium`, Size: `16px` |
+
+**🎨 Color Tokens**
+
+- **Primary**: `#6C5CE7` (Purple)
+- **Secondary**: `#A29BFE` (Light Purple)  
+- **Success**: `#4CAF50` (Green)
+- **Warning**: `#FF9800` (Orange)
+- **Error**: `#E91E63` (Pink)
+- **Background**: `#F8F9FA` (Light Gray)
+
+</details>
+
+</div>
+
+### 🎯 Features do Design System
+
+| Feature                 | Descrição                                     | Status |
+| ----------------------- | --------------------------------------------- | ------ |
+| **🖼️ Design System**    | Componentes, cores e tipografia padronizados  | ✅ Completo |
+| **📱 Protótipo Mobile** | Fluxo navegável para iOS e Android            | ✅ Completo |
+| **🎯 Interações**       | Botões, transições e micro-animações          | ✅ Completo |
+| **📐 Specs Técnicas**   | Medidas e especificações para desenvolvimento | ✅ Completo |
+| **🎨 Components**       | Biblioteca de componentes reutilizáveis       | ✅ Completo |
+| **🌈 Color Palette**    | Paleta de cores com tokens de design          | ✅ Completo |
+
+### 📖 Como Usar o Design
+
+1. **Acesse o Figma Community**: [PayFlow Design System](https://www.figma.com/community/file/1352388163173966368/payflow)
+2. **Duplique o arquivo**: Clique em "Duplicate" para ter sua própria cópia
+3. **Explore os componentes**: Navegue pelas páginas e veja todos os elementos
+4. **Use no desenvolvimento**: Extraia assets, medidas e especificações
 
 ## Build para Produção
 
