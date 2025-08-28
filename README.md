@@ -4,7 +4,32 @@
   <img src="./.github/Thumbnail.png" alt="PayFlow - Gerenciador de Boletos" width="600" height="auto">
   
   <p align="center">
-    <strong>Aplicativo mobile para gerenciamento inteligente de boletos</strong><br>
+    <strong>Aplicativo mobile para geren<!-- Fallback para dispositivos que não suportam iframe -->
+<details>
+<summary>📖 <strong>Como usar o preview do Figma</strong></summary>
+
+<br>
+
+**🎯 Navegação no Preview:**
+
+- **Zoom**: Use `Ctrl/Cmd + Scroll` ou os controles de zoom
+- **Pan**: Clique e arraste para mover a visualização
+- **Layers**: Clique em elementos para ver propriedades
+- **Fullscreen**: Clique no ícone de tela cheia
+
+**🔗 Links Diretos:**
+
+- **🎨 Figma Community**: Ver, comentar e duplicar o projeto
+- **🖱️ Modo Protótipo**: Interagir com fluxo navegável
+- **🔧 Modo Design**: Ver specs técnicas e componentes
+
+**📱 Compatibilidade:**
+
+- ✅ Desktop (Chrome, Firefox, Safari, Edge)
+- ✅ Mobile (limitações de zoom)
+- ✅ Página dedicada (fallback garantido)
+
+</details>ligente de boletos</strong><br>
     Desenvolvido com React Native + Expo
   </p>
 
@@ -155,58 +180,72 @@ npm run web
   <strong>Figma Community</strong>
 </div>
 
-## 🎨 Design & Protótipo
-
-<div align="center">
-  <img src="./docs/assets/figma-icon.svg" width="24" height="24" alt="Figma">
-  <strong>Figma Community</strong>
-</div>
-
-### 📱 Preview Interativo do Design
+### 📱 Preview Interativo do Figma
 
 <div align="center">
 
-<!-- Figma Preview Image with Link -->
-<a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
-  <img src="./docs/assets/figma-preview.svg" alt="PayFlow Figma Preview" width="100%" style="max-width: 800px; border-radius: 12px; border: 1px solid #e9ecef;">
-</a>
+<!-- Figma Embed Interativo -->
+<iframe 
+  style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+  width="800" 
+  height="450" 
+  src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/community/file/1352388163173966368/payflow" 
+  allowfullscreen>
+</iframe>
 
-<p><em>👆 <strong>Clique na imagem acima</strong> para abrir e interagir com o design no Figma Community</em></p>
+<p><em>👆 <strong>Interface interativa do Figma</strong> - navegue, faça zoom e explore o design diretamente aqui</em></p>
 
-<!-- Direct Links -->
+<!-- Se o iframe não funcionar, use o link alternativo -->
+<p><strong>⚠️ Iframe não carregou?</strong> 
+<a href="./docs/figma-preview.html" target="_blank">
+🖼️ <strong>Clique aqui para preview em página dedicada</strong>
+</a></p>
+
+<!-- Links de Acesso Direto -->
 <div style="margin: 20px 0;">
 
 <a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
-  <img src="https://img.shields.io/badge/🎨_Abrir_no_Figma_Community-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Ver no Figma Community">
+  <img src="https://img.shields.io/badge/🎨_Abrir_no_Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Abrir no Figma">
 </a>
 
 &nbsp;&nbsp;
 
-<a href="https://www.figma.com/proto/1352388163173966368/payflow?node-id=1%3A2&scaling=scale-down&page-id=0%3A1" target="_blank">
-  <img src="https://img.shields.io/badge/🖱️_Protótipo_Interativo-4630EB?style=for-the-badge&logo=figma&logoColor=white" alt="Protótipo Interativo">
+<a href="https://www.figma.com/proto/1352388163173966368/payflow?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank">
+  <img src="https://img.shields.io/badge/🖱️_Modo_Protótipo-4630EB?style=for-the-badge&logo=figma&logoColor=white" alt="Modo Protótipo">
+</a>
+
+&nbsp;&nbsp;
+
+<a href="https://www.figma.com/file/1352388163173966368/payflow?node-id=0%3A1" target="_blank">
+  <img src="https://img.shields.io/badge/🔧_Modo_Design-00C4CC?style=for-the-badge&logo=figma&logoColor=white" alt="Modo Design">
 </a>
 
 </div>
 
-<!-- GitHub Preview Alternative -->
+<!-- Fallback para dispositivos que não suportam iframe -->
 <details>
-<summary>📋 <strong>Ver specs técnicas e componentes</strong></summary>
+<summary>� <strong>Não consegue ver o preview? Clique aqui</strong></summary>
 
 <br>
 
-**🎯 Design System Components**
+Se o iframe não estiver funcionando no seu dispositivo ou navegador, use os links diretos acima para:
 
-| Componente | Figma Layer | Especificações |
-|------------|-------------|----------------|
-| **Header** | `Header/Primary` | Background: `#6C5CE7`, Height: `60px` |
-| **Card** | `Cards/Bill Card` | Radius: `8px`, Shadow: `0 2px 8px rgba(0,0,0,0.1)` |
-| **Button** | `Buttons/Primary` | Background: `#6C5CE7`, Radius: `6px` |
-| **Typography** | `Text/Heading` | Font: `Roboto Medium`, Size: `16px` |
+- **🎨 Abrir no Figma**: Visualizar o arquivo completo
+- **🖱️ Modo Protótipo**: Interagir com o fluxo navegável
+- **🔧 Modo Design**: Ver componentes e especificações
+
+</details>
+
+</div>
+| **Header**     | `Header/Primary`  | Background: `#6C5CE7`, Height: `60px`              |
+| **Card**       | `Cards/Bill Card` | Radius: `8px`, Shadow: `0 2px 8px rgba(0,0,0,0.1)` |
+| **Button**     | `Buttons/Primary` | Background: `#6C5CE7`, Radius: `6px`               |
+| **Typography** | `Text/Heading`    | Font: `Roboto Medium`, Size: `16px`                |
 
 **🎨 Color Tokens**
 
 - **Primary**: `#6C5CE7` (Purple)
-- **Secondary**: `#A29BFE` (Light Purple)  
+- **Secondary**: `#A29BFE` (Light Purple)
 - **Success**: `#4CAF50` (Green)
 - **Warning**: `#FF9800` (Orange)
 - **Error**: `#E91E63` (Pink)
@@ -218,8 +257,8 @@ npm run web
 
 ### 🎯 Features do Design System
 
-| Feature                 | Descrição                                     | Status |
-| ----------------------- | --------------------------------------------- | ------ |
+| Feature                 | Descrição                                     | Status      |
+| ----------------------- | --------------------------------------------- | ----------- |
 | **🖼️ Design System**    | Componentes, cores e tipografia padronizados  | ✅ Completo |
 | **📱 Protótipo Mobile** | Fluxo navegável para iOS e Android            | ✅ Completo |
 | **🎯 Interações**       | Botões, transições e micro-animações          | ✅ Completo |

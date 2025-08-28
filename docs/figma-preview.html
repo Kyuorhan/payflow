@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PayFlow - Design System Preview</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 100%;
+        max-width: 1200px;
+        min-height: 600px;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 28px;
+        margin-bottom: 8px;
+      }
+
+      .header p {
+        opacity: 0.9;
+        font-size: 16px;
+      }
+
+      .figma-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        background: #f8f9fa;
+      }
+
+      .figma-embed {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #666;
+      }
+
+      .loading .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #6c5ce7;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 16px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .actions {
+        padding: 20px;
+        background: #f8f9fa;
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn-figma {
+        background: #f24e1e;
+        color: white;
+      }
+
+      .btn-figma:hover {
+        background: #d63411;
+        transform: translateY(-2px);
+      }
+
+      .btn-prototype {
+        background: #4630eb;
+        color: white;
+      }
+
+      .btn-prototype:hover {
+        background: #3525c4;
+        transform: translateY(-2px);
+      }
+
+      .btn-github {
+        background: #24292e;
+        color: white;
+      }
+
+      .btn-github:hover {
+        background: #1a1e22;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 768px) {
+        .actions {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .btn {
+          width: 100%;
+          max-width: 300px;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🎨 PayFlow Design System</h1>
+        <p>
+          Sistema de design completo para aplicativo de gerenciamento de boletos
+        </p>
+      </div>
+
+      <div class="figma-container">
+        <div class="loading" id="loading">
+          <div class="spinner"></div>
+          <p>Carregando preview do Figma...</p>
+        </div>
+
+        <iframe
+          class="figma-embed"
+          src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/community/file/1352388163173966368/payflow"
+          allowfullscreen
+          onload="hideLoading()"
+          onerror="showError()"
+        >
+        </iframe>
+      </div>
+
+      <div class="actions">
+        <a
+          href="https://www.figma.com/community/file/1352388163173966368/payflow"
+          target="_blank"
+          class="btn btn-figma"
+        >
+          🎨 Abrir no Figma Community
+        </a>
+
+        <a
+          href="https://www.figma.com/proto/1352388163173966368/payflow?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2"
+          target="_blank"
+          class="btn btn-prototype"
+        >
+          🖱️ Modo Protótipo
+        </a>
+
+        <a
+          href="https://github.com/Kyuorhan/payflow"
+          target="_blank"
+          class="btn btn-github"
+        >
+          💻 Ver Repositório
+        </a>
+      </div>
+    </div>
+
+    <script>
+      function hideLoading() {
+        const loading = document.getElementById("loading");
+        if (loading) {
+          loading.style.display = "none";
+        }
+      }
+
+      function showError() {
+        const loading = document.getElementById("loading");
+        if (loading) {
+          loading.innerHTML = `
+                    <div style="color: #e74c3c;">
+                        <p>❌ Não foi possível carregar o preview</p>
+                        <p style="margin-top: 8px; font-size: 14px;">Use os botões abaixo para acessar diretamente</p>
+                    </div>
+                `;
+        }
+      }
+
+      // Fallback para timeout
+      setTimeout(() => {
+        const loading = document.getElementById("loading");
+        if (loading && loading.style.display !== "none") {
+          hideLoading();
+        }
+      }, 5000);
+    </script>
+  </body>
+</html>
