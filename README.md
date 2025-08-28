@@ -4,30 +4,8 @@
   <img src="./.github/Thumbnail.png" alt="PayFlow - Gerenciador de Boletos" width="600" height="auto">
   
   <p align="center">
-    <strong>Aplicativo mobile para geren<!-- Fallback para dispositivos que não suportam iframe -->
-<details>
-<summary>📖 <strong>Como usar o preview do Figma</strong></summary>
-
-<br>
-
-**🎯 Navegação no Preview:**
-
-- **Zoom**: Use `Ctrl/Cmd + Scroll` ou os controles de zoom
-- **Pan**: Clique e arraste para mover a visualização
-- **Layers**: Clique em elementos para ver propriedades
-- **Fullscreen**: Clique no ícone de tela cheia
-
-**🔗 Links Diretos:**
-
-- **🎨 Figma Community**: Ver, comentar e duplicar o projeto
-- **🖱️ Modo Protótipo**: Interagir com fluxo navegável
-- **🔧 Modo Design**: Ver specs técnicas e componentes
-
-**📱 Compatibilidade:**
-
-- ✅ Desktop (Chrome, Firefox, Safari, Edge)
-- ✅ Mobile (limitações de zoom)
-- ✅ Página dedicada (fallback garantido)
+    <strong>Aplicativo mobile para gerenciamento inteligente de boletos</strong>
+  </p>
 
 </details>ligente de boletos</strong><br>
     Desenvolvido com React Native + Expo
@@ -180,44 +158,31 @@ npm run web
   <strong>Figma Community</strong>
 </div>
 
-### 📱 Preview Interativo do Figma
+### 🎨 Design no Figma
 
 <div align="center">
 
-<!-- GitHub não suporta iframe, então usamos preview clickável -->
-<a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
-  <img src="./docs/assets/figma-preview.svg" alt="Preview do PayFlow no Figma" width="800" style="border: 2px solid #F24E1E; border-radius: 12px; cursor: pointer;">
-</a>
+**⚠️ Limitação do GitHub: Não é possível ter preview interativo igual ao site do Figma Community**
 
-<p><em>👆 <strong>Clique na imagem acima para abrir o Figma Community</strong> e interagir com o design</em></p>
+O GitHub não suporta iframes ou embeds interativos por questões de segurança. Para interagir com o design como na web, você precisa acessar diretamente o Figma:
 
-<!-- Explicação sobre limitações do GitHub -->
-<p>ℹ️ <strong>Nota:</strong> O GitHub não suporta iframes por segurança. Para preview interativo completo, use:</p>
-
-<p>
-<a href="./docs/figma-preview.html" target="_blank">
-🖼️ <strong>Página com Figma Embed Completo</strong>
-</a>
-</p>
-
-<!-- Links de Acesso Direto -->
-<div style="margin: 20px 0;">
+<br>
 
 <a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
-  <img src="https://img.shields.io/badge/🎨_Abrir_no_Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Abrir no Figma">
+  <img src="https://img.shields.io/badge/🎨_Abrir_no_Figma_Community-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Abrir no Figma Community">
 </a>
 
-&nbsp;&nbsp;
+<br><br>
 
-<a href="https://www.figma.com/proto/1352388163173966368/payflow?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank">
-  <img src="https://img.shields.io/badge/🖱️_Modo_Protótipo-4630EB?style=for-the-badge&logo=figma&logoColor=white" alt="Modo Protótipo">
-</a>
+**💡 No Figma Community você pode:**
 
-&nbsp;&nbsp;
+- 👀 Visualizar o design completo
+- 🖱️ Interagir com o protótipo
+- 💬 Deixar comentários
+- 📋 Duplicar para sua conta
+- 🔍 Inspecionar componentes
 
-<a href="https://www.figma.com/file/1352388163173966368/payflow?node-id=0%3A1" target="_blank">
-  <img src="https://img.shields.io/badge/🔧_Modo_Design-00C4CC?style=for-the-badge&logo=figma&logoColor=white" alt="Modo Design">
-</a>
+</div>
 
 </div>
 
