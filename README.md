@@ -9,7 +9,8 @@
   </p>
 
   <div align="center">
-    <img src="./docs/assets/mobile-icon.svg" alt="Mobile" width="32" height="32">
+    <img src="./docs/assets/payflow-icon.svg" alt="PayFlow" width="32" height="32">
+    <img src="./docs/assets/mobile-icon.svg" alt="React Native" width="32" height="32">
     <img src="./docs/assets/typescript-icon.svg" alt="TypeScript" width="32" height="32">
     <img src="./docs/assets/expo-icon.svg" alt="Expo" width="32" height="32">
     <img src="./docs/assets/figma-icon.svg" alt="Figma" width="32" height="32">
@@ -53,6 +54,10 @@ O **PayFlow** é um aplicativo mobile desenvolvido para facilitar o gerenciament
   <table>
     <tr>
       <td align="center" width="100">
+        <img src="./docs/assets/payflow-icon.svg" width="48" height="48" alt="PayFlow"><br>
+        <sub><b>PayFlow</b></sub>
+      </td>
+      <td align="center" width="100">
         <img src="./docs/assets/mobile-icon.svg" width="48" height="48" alt="React Native"><br>
         <sub><b>React Native</b></sub>
       </td>
@@ -62,7 +67,7 @@ O **PayFlow** é um aplicativo mobile desenvolvido para facilitar o gerenciament
       </td>
       <td align="center" width="100">
         <img src="./docs/assets/expo-icon.svg" width="48" height="48" alt="Expo"><br>
-        <sub><b>Expo SDK 50</b></sub>
+        <sub><b>Expo SDK 53</b></sub>
       </td>
       <td align="center" width="100">
         <img src="./docs/assets/figma-icon.svg" width="48" height="48" alt="Figma"><br>
@@ -74,23 +79,38 @@ O **PayFlow** é um aplicativo mobile desenvolvido para facilitar o gerenciament
 
 **Stack Principal:**
 
-- Framework: React Native com Expo SDK 50
+- Framework: React Native com Expo SDK 53
 - Linguagem: TypeScript para tipagem robusta
 - Navegação: Expo Router (file-based routing)
 - Build: EAS Build para iOS e Android
 - Design: Figma para prototipação e design system
 
-## Início Rápido
+## 🚀 Início Rápido
 
-### Pré-requisitos
+### 📋 Pré-requisitos
 
+**Ambiente de Desenvolvimento:**
 ```bash
-node >= 18.0.0
-npm >= 9.0.0
+Node.js >= 18.0.0
+npm >= 9.0.0 ou yarn >= 1.22.0
+Git >= 2.30.0
 ```
 
-### Instalação
+**Para testar no dispositivo físico:**
 
+| Método | Descrição | Requisitos |
+|--------|-----------|------------|
+| **Expo Go** *(Recomendado)* | App gratuito para testar rapidamente | [📱 iOS](https://apps.apple.com/app/expo-go/id982107779) \| [🤖 Android](https://play.google.com/store/apps/details?id=host.exp.exponent) |
+| **Expo CLI** | Desenvolvimento local completo | `npm install -g @expo/cli@latest` |
+| **EAS Build** | Builds nativos de produção | `npm install -g eas-cli@latest` |
+
+**Para builds nativos (opcional):**
+- **iOS**: macOS + Xcode 15+ (para executar em simulador)
+- **Android**: Android Studio + Java JDK 17 (para executar em emulador)
+
+### ⚡ Instalação e Execução
+
+**1. Clone e configure o projeto:**
 ```bash
 # Clone o repositório
 git clone https://github.com/Kyuorhan/payflow.git
@@ -99,39 +119,56 @@ cd payflow
 # Instale as dependências
 npm install
 
-# Inicie o desenvolvimento
+# Inicie o servidor de desenvolvimento
 npm start
 ```
 
-### Executar no dispositivo
+**2. Execute no seu dispositivo:**
 
+**📱 Expo Go (Mais rápido):**
+- Escaneie o QR Code que aparece no terminal
+- Abra automaticamente no app Expo Go
+
+**🔧 Build Local:**
 ```bash
 # iOS (requer macOS + Xcode)
 npm run ios
 
-# Android (requer Android Studio)
+# Android (requer Android Studio + Java JDK)
 npm run android
+
+# Para testar no navegador (experimental)
+npm run web
 ```
 
-## Screenshots & Demo
+**🎯 Dica:** Use o Expo Go para desenvolvimento rápido e builds locais apenas quando precisar testar funcionalidades nativas específicas.
+
+## 🎨 Design & Protótipo
 
 <div align="center">
-  <img src="./.github/Project.png" alt="PayFlow App Interface" width="800" height="auto">
+  <img src="./docs/assets/figma-icon.svg" width="24" height="24" alt="Figma">
+  <strong>Figma Community</strong>
+</div>
+
+Explore o design system completo e interaja com o protótipo navegável do PayFlow:
+
+<div align="center">
   
-  <br><br>
-  
-  <div align="center">
-    <img src="./docs/assets/demo-icon.svg" width="24" height="24" alt="Demo">
-    <strong>Demonstração Interativa</strong>
-  </div>
-  
-  <p>
-    <a href="https://www.figma.com/proto/1352388163173966368/payflow" target="_blank">
-      <img src="https://img.shields.io/badge/Ver_Protótipo_Interativo-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Ver Protótipo">
-    </a>
-  </p>
-  
-  <p><em>Navegue pelas telas, interaja com os componentes e experimente a UX completa</em></p>
+**🎯 Protótipo Interativo**
+
+<a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
+  <img src="https://img.shields.io/badge/🎨_Ver_no_Figma_Community-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Ver no Figma Community">
+</a>
+
+<p><em>Navegue pelas telas, teste interações e experimente o fluxo completo do usuário</em></p>
+
+| Feature | Descrição |
+|---------|-----------|
+| **🖼️ Design System** | Componentes, cores e tipografia padronizados |
+| **📱 Protótipo Mobile** | Fluxo navegável para iOS e Android |
+| **🎯 Interações** | Botões, transições e micro-animações |
+| **📐 Specs Técnicas** | Medidas e especificações para desenvolvimento |
+
 </div>
 
 ## Build para Produção

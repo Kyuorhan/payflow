@@ -1,7 +1,17 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="40" height="40" rx="8" fill="#F24E1E"/>
-<circle cx="16" cy="16" r="4" fill="white"/>
-<circle cx="24" cy="16" r="4" fill="white"/>
-<circle cx="16" cy="24" r="4" fill="white"/>
-<circle cx="24" cy="24" r="4" fill="white"/>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Figma F Icon Recreation -->
+  
+  <!-- Left column circles -->
+  <circle cx="16" cy="14" r="6" fill="#F24E1E"/>
+  <circle cx="16" cy="24" r="6" fill="#A259FF"/>
+  <circle cx="16" cy="34" r="6" fill="#0ACF83"/>
+  
+  <!-- Top right circle -->
+  <circle cx="32" cy="14" r="6" fill="#FF7262"/>
+  
+  <!-- Center right circle -->
+  <circle cx="32" cy="24" r="6" fill="#1ABCFE"/>
+  
+  <!-- Grid background -->
+  <rect x="6" y="6" width="36" height="36" rx="8" fill="transparent" stroke="#E0E0E0" stroke-width="1" opacity="0.2"/>
 </svg>
