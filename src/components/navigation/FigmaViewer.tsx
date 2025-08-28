@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { 
-  View, 
-  Text, 
-  StyleSheet, 
-  TouchableOpacity, 
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
   Dimensions,
   Modal,
-  StatusBar
-} from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+  StatusBar,
+} from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
-const { width: screenWidth, height: screenHeight } = Dimensions.get('window');
+const { width: screenWidth, height: screenHeight } = Dimensions.get("window");
 
 interface Screen {
   id: string;
@@ -23,21 +23,24 @@ interface FigmaViewerProps {
   initialScreen?: string;
 }
 
-export function FigmaViewer({ 
-  screens, 
-  initialScreen = screens[0]?.id 
+export function FigmaViewer({
+  screens,
+  initialScreen = screens[0]?.id,
 }: FigmaViewerProps) {
   const [currentScreen, setCurrentScreen] = useState(initialScreen);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  
-  const CurrentComponent = screens.find(s => s.id === currentScreen)?.component;
-  const currentIndex = screens.findIndex(s => s.id === currentScreen);
-  
-  const navigateToScreen = (direction: 'prev' | 'next') => {
-    const newIndex = direction === 'next' 
-      ? Math.min(currentIndex + 1, screens.length - 1)
-      : Math.max(currentIndex - 1, 0);
-    
+
+  const CurrentComponent = screens.find(
+    (s) => s.id === currentScreen
+  )?.component;
+  const currentIndex = screens.findIndex((s) => s.id === currentScreen);
+
+  const navigateToScreen = (direction: "prev" | "next") => {
+    const newIndex =
+      direction === "next"
+        ? Math.min(currentIndex + 1, screens.length - 1)
+        : Math.max(currentIndex - 1, 0);
+
     setCurrentScreen(screens[newIndex].id);
   };
 
@@ -48,14 +51,14 @@ export function FigmaViewer({
         <View style={styles.header}>
           <View style={styles.headerLeft}>
             <Text style={styles.screenTitle}>
-              {screens.find(s => s.id === currentScreen)?.name}
+              {screens.find((s) => s.id === currentScreen)?.name}
             </Text>
             <Text style={styles.screenCounter}>
               {currentIndex + 1} de {screens.length}
             </Text>
           </View>
-          
-          <TouchableOpacity 
+
+          <TouchableOpacity
             style={styles.fullscreenButton}
             onPress={() => setIsFullscreen(true)}
           >
@@ -75,14 +78,17 @@ export function FigmaViewer({
         {/* Navigation */}
         <View style={styles.navigation}>
           <TouchableOpacity
-            style={[styles.navButton, currentIndex === 0 && styles.navButtonDisabled]}
-            onPress={() => navigateToScreen('prev')}
+            style={[
+              styles.navButton,
+              currentIndex === 0 && styles.navButtonDisabled,
+            ]}
+            onPress={() => navigateToScreen("prev")}
             disabled={currentIndex === 0}
           >
-            <Ionicons 
-              name="chevron-back" 
-              size={24} 
-              color={currentIndex === 0 ? "#CCC" : "#0066FF"} 
+            <Ionicons
+              name="chevron-back"
+              size={24}
+              color={currentIndex === 0 ? "#CCC" : "#0066FF"}
             />
           </TouchableOpacity>
 
@@ -92,7 +98,7 @@ export function FigmaViewer({
                 key={screen.id}
                 style={[
                   styles.dot,
-                  currentScreen === screen.id && styles.activeDot
+                  currentScreen === screen.id && styles.activeDot,
                 ]}
                 onPress={() => setCurrentScreen(screen.id)}
               />
@@ -100,25 +106,24 @@ export function FigmaViewer({
           </View>
 
           <TouchableOpacity
-            style={[styles.navButton, currentIndex === screens.length - 1 && styles.navButtonDisabled]}
-            onPress={() => navigateToScreen('next')}
+            style={[
+              styles.navButton,
+              currentIndex === screens.length - 1 && styles.navButtonDisabled,
+            ]}
+            onPress={() => navigateToScreen("next")}
             disabled={currentIndex === screens.length - 1}
           >
-            <Ionicons 
-              name="chevron-forward" 
-              size={24} 
-              color={currentIndex === screens.length - 1 ? "#CCC" : "#0066FF"} 
+            <Ionicons
+              name="chevron-forward"
+              size={24}
+              color={currentIndex === screens.length - 1 ? "#CCC" : "#0066FF"}
             />
           </TouchableOpacity>
         </View>
       </View>
 
       {/* Fullscreen Modal */}
-      <Modal
-        visible={isFullscreen}
-        animationType="fade"
-        statusBarTranslucent
-      >
+      <Modal visible={isFullscreen} animationType="fade" statusBarTranslucent>
         <StatusBar hidden />
         <View style={styles.fullscreenContainer}>
           <TouchableOpacity
@@ -136,20 +141,23 @@ export function FigmaViewer({
 
           <View style={styles.fullscreenNavigation}>
             <TouchableOpacity
-              style={[styles.fullscreenNavButton, currentIndex === 0 && styles.navButtonDisabled]}
-              onPress={() => navigateToScreen('prev')}
+              style={[
+                styles.fullscreenNavButton,
+                currentIndex === 0 && styles.navButtonDisabled,
+              ]}
+              onPress={() => navigateToScreen("prev")}
               disabled={currentIndex === 0}
             >
-              <Ionicons 
-                name="chevron-back" 
-                size={30} 
-                color={currentIndex === 0 ? "rgba(255,255,255,0.3)" : "#FFFFFF"} 
+              <Ionicons
+                name="chevron-back"
+                size={30}
+                color={currentIndex === 0 ? "rgba(255,255,255,0.3)" : "#FFFFFF"}
               />
             </TouchableOpacity>
 
             <View style={styles.fullscreenInfo}>
               <Text style={styles.fullscreenTitle}>
-                {screens.find(s => s.id === currentScreen)?.name}
+                {screens.find((s) => s.id === currentScreen)?.name}
               </Text>
               <Text style={styles.fullscreenCounter}>
                 {currentIndex + 1} / {screens.length}
@@ -157,14 +165,21 @@ export function FigmaViewer({
             </View>
 
             <TouchableOpacity
-              style={[styles.fullscreenNavButton, currentIndex === screens.length - 1 && styles.navButtonDisabled]}
-              onPress={() => navigateToScreen('next')}
+              style={[
+                styles.fullscreenNavButton,
+                currentIndex === screens.length - 1 && styles.navButtonDisabled,
+              ]}
+              onPress={() => navigateToScreen("next")}
               disabled={currentIndex === screens.length - 1}
             >
-              <Ionicons 
-                name="chevron-forward" 
-                size={30} 
-                color={currentIndex === screens.length - 1 ? "rgba(255,255,255,0.3)" : "#FFFFFF"} 
+              <Ionicons
+                name="chevron-forward"
+                size={30}
+                color={
+                  currentIndex === screens.length - 1
+                    ? "rgba(255,255,255,0.3)"
+                    : "#FFFFFF"
+                }
               />
             </TouchableOpacity>
           </View>
@@ -177,47 +192,47 @@ export function FigmaViewer({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F8F9FA',
+    backgroundColor: "#F8F9FA",
   },
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     paddingHorizontal: 20,
     paddingVertical: 16,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: "#FFFFFF",
     borderBottomWidth: 1,
-    borderBottomColor: '#E5E5E5',
+    borderBottomColor: "#E5E5E5",
   },
   headerLeft: {
     flex: 1,
   },
   screenTitle: {
     fontSize: 18,
-    fontWeight: '600',
-    color: '#1A1A1A',
+    fontWeight: "600",
+    color: "#1A1A1A",
     marginBottom: 2,
   },
   screenCounter: {
     fontSize: 14,
-    color: '#666',
+    color: "#666",
   },
   fullscreenButton: {
     padding: 8,
   },
   deviceContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     padding: 20,
   },
   deviceFrame: {
     width: 320,
     height: 640,
-    backgroundColor: '#000000',
+    backgroundColor: "#000000",
     borderRadius: 25,
     padding: 4,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.3,
     shadowRadius: 20,
@@ -225,53 +240,53 @@ const styles = StyleSheet.create({
   },
   deviceScreen: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: "#FFFFFF",
     borderRadius: 21,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   navigation: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     paddingHorizontal: 20,
     paddingVertical: 16,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: "#FFFFFF",
     borderTopWidth: 1,
-    borderTopColor: '#E5E5E5',
+    borderTopColor: "#E5E5E5",
   },
   navButton: {
     padding: 12,
     borderRadius: 8,
-    backgroundColor: '#F8F9FA',
+    backgroundColor: "#F8F9FA",
   },
   navButtonDisabled: {
     opacity: 0.5,
   },
   dotsContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 8,
   },
   dot: {
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: '#CCC',
+    backgroundColor: "#CCC",
   },
   activeDot: {
-    backgroundColor: '#0066FF',
+    backgroundColor: "#0066FF",
     width: 20,
   },
-  
+
   // Fullscreen styles
   fullscreenContainer: {
     flex: 1,
-    backgroundColor: '#000000',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#000000",
+    justifyContent: "center",
+    alignItems: "center",
   },
   exitButton: {
-    position: 'absolute',
+    position: "absolute",
     top: 50,
     right: 20,
     zIndex: 10,
@@ -280,41 +295,41 @@ const styles = StyleSheet.create({
   fullscreenDeviceFrame: {
     width: Math.min(screenWidth * 0.9, 400),
     height: Math.min(screenHeight * 0.8, 800),
-    backgroundColor: '#1A1A1A',
+    backgroundColor: "#1A1A1A",
     borderRadius: 30,
     padding: 6,
   },
   fullscreenDeviceScreen: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: "#FFFFFF",
     borderRadius: 24,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   fullscreenNavigation: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 50,
     left: 0,
     right: 0,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     paddingHorizontal: 30,
   },
   fullscreenNavButton: {
     padding: 15,
   },
   fullscreenInfo: {
-    alignItems: 'center',
+    alignItems: "center",
   },
   fullscreenTitle: {
     fontSize: 18,
-    fontWeight: '600',
-    color: '#FFFFFF',
+    fontWeight: "600",
+    color: "#FFFFFF",
     marginBottom: 4,
   },
   fullscreenCounter: {
     fontSize: 14,
-    color: 'rgba(255,255,255,0.7)',
+    color: "rgba(255,255,255,0.7)",
   },
 });
 
