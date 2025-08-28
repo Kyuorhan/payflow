@@ -140,7 +140,7 @@ npm run android
 # Build iOS
 npx eas build --platform ios --profile production
 
-# Build Android  
+# Build Android
 npx eas build --platform android --profile production
 
 # Build para ambas plataformas
@@ -148,6 +148,7 @@ npx eas build --platform all
 ```
 
 ### CI/CD Automático
+
 - GitHub Actions configurado para builds automáticos
 - EAS Build para iOS e Android
 - Testes automatizados em cada push
@@ -279,97 +280,29 @@ npm run test:coverage
 npm run lint
 ```
 
-## Contribuição
+## 🤝 Contribuindo
 
-Contribuições são bem-vindas! Para contribuir:
+Contribuições são sempre bem-vindas! Para contribuir:
 
-1. Faça um fork do projeto
-2. Crie sua feature branch (`git checkout -b feature/NovaFuncionalidade`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
+1. Fork o repositório
+2. Crie uma branch para sua feature: `git checkout -b feature/nova-feature`
+3. Commit suas mudanças: `git commit -m 'feat: adiciona nova feature'`
+4. Push para a branch: `git push origin feature/nova-feature`
 5. Abra um Pull Request
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 👨‍💻 Autor
+## 👨‍💻 Desenvolvedor
 
 <div align="center">
   <img src="https://github.com/Kyuorhan.png" alt="Noah Entregas" width="100" height="100" style="border-radius: 50%">
   
   **Noah Entregas**
   
-  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/Kyuorhan)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/noah-entregas)
-</div>
-
----
-
-<div align="center">
-  <p>⭐ Se este projeto te ajudou, considere dar uma estrela!</p>
-  <p>Feito com ❤️ e ☕ por <strong>Jhonny Kyuorhan</strong></p>
-</div>
-
-<p align="center">O Layout foi desenvolvido por <a href="https://www.instagram.com/kyuorhan">Jhonny Kyuorhan</a>, e você pode acessá-lo no Figma:</p>
-
-<br>
-
-<p> 
-    
-  >- [Mobile](https://www.figma.com/community/file/1352388163173966368/payflow) 📱
-</p>
-
-<br>
-
-### <h3 align="center">Como Usar 🤔</h3>
-
-##
-
-###
-
-Clone esse repositório:
-
-```
-$ git clone https://github.com/Kyuorhan/payflow
-```
-
-Entre no diretório:
-
-```
-$ cd meals
-```
-
-Instale as dependências:
-
-```
-$ flutter pub get
-```
-
-Execute a aplicação:
-
-```
-$ flutter run
-```
-
-###
-
-<div align="center">
-  <p><img align="right" height="350em" alt="Profile Card" src="https://raw.githubusercontent.com/gist/Kyuorhan/1445a6c546dd1a7b5e8b2df72039207a/raw/e281a60fb9099b6f925a768e07bce9f76b3dabd0/githubcard.svg"/></p>
-
-<br> <br>
-Este projeto foi desenvolvido com ❤️ e está em constante evolução, buscando sempre novos desafios.<br>
-**[Sinta-se à vontade para participar e trocar ideias no GitHub! 👋](https://github.com/Kyuorhan)**.
-
-##
-
-###
-
-  <div align="center" > 
-    <a href="https://www.linkedin.com/in/jhonny-kyuorhan/" target="_blank"> <img height="30em" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-    <a href = "mailto:jkdevprogrammer@gmail.com"><img height="30em" src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-    <a href="https://www.twitch.tv/kyuorhan" target="_blank"> <img height="30em" src="https://img.shields.io/badge/Twitch-A970FF?style=for-the-badge&logo=twitch&logoColor=white" target="_blank"></a> 
-    <a href="https://www.instagram.com/kyuorhan" target="_blank"> <img height="30em" src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-    <!-- <a href="https://steamcommunity.com/id/Kyuorhan/" target="_blank"> <img height="30em" src="https://img.shields.io/badge/Steam-465871?style=for-the-badge&logo=steam&logoColor=white" target="_blank"></a> -->  
-  </div>   
+  [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github&logoColor=white)](https://github.com/Kyuorhan)
+  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/noah-entregas)
+  
+  <p>Feito com ❤️ em React Native</p>
 </div>
