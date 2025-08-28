@@ -184,22 +184,21 @@ npm run web
 
 <div align="center">
 
-<!-- Figma Embed Interativo -->
-<iframe 
-  style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-  width="800" 
-  height="450" 
-  src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/community/file/1352388163173966368/payflow" 
-  allowfullscreen>
-</iframe>
+<!-- GitHub não suporta iframe, então usamos preview clickável -->
+<a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
+  <img src="./docs/assets/figma-preview.svg" alt="Preview do PayFlow no Figma" width="800" style="border: 2px solid #F24E1E; border-radius: 12px; cursor: pointer;">
+</a>
 
-<p><em>👆 <strong>Interface interativa do Figma</strong> - navegue, faça zoom e explore o design diretamente aqui</em></p>
+<p><em>👆 <strong>Clique na imagem acima para abrir o Figma Community</strong> e interagir com o design</em></p>
 
-<!-- Se o iframe não funcionar, use o link alternativo -->
-<p><strong>⚠️ Iframe não carregou?</strong> 
+<!-- Explicação sobre limitações do GitHub -->
+<p>ℹ️ <strong>Nota:</strong> O GitHub não suporta iframes por segurança. Para preview interativo completo, use:</p>
+
+<p>
 <a href="./docs/figma-preview.html" target="_blank">
-🖼️ <strong>Clique aqui para preview em página dedicada</strong>
-</a></p>
+🖼️ <strong>Página com Figma Embed Completo</strong>
+</a>
+</p>
 
 <!-- Links de Acesso Direto -->
 <div style="margin: 20px 0;">
