@@ -4,25 +4,19 @@
   <img src="./.github/Thumbnail.svg" alt="PayFlow - Gerenciador de Boletos" width="100%" height="auto">
   
   <p align="center">
-    <strong>Aplicativo mo---
-
-## 📐 Design Systemamento inteligente de boletos</strong><br>
-
+    <strong>Aplicativo mobile para gerenciamento inteligente de boletos</strong><br>
     Desenvolvido com React Native + Expo
-
   </p>
 
   <div align="center">
-    <img src="./docs/assets/payflow-icon.svg" alt="PayFlow" width="32" height="32">
-    <img src="./docs/assets/mobile-icon.svg" alt="React Native" width="32" height="32">
-    <img src="./docs/assets/typescript-icon.svg" alt="TypeScript" width="32" height="32">
-    <img src="./docs/assets/expo-icon.svg" alt="Expo" width="32" height="32">
-    <img src="./docs/assets/figma-icon.svg" alt="Figma" width="32" height="32">
+    <img src="https://img.shields.io/github/stars/Kyuorhan/payflow?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=FFD700" alt="GitHub Stars">
+    <img src="https://img.shields.io/github/forks/Kyuorhan/payflow?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=0969DA" alt="GitHub Forks">
+    <img src="https://komarev.com/ghpvc/?username=payflow&repo=payflow&style=for-the-badge&color=0969DA" alt="Profile Views">
   </div>
   
   <br>
   
-  <div align="center">
+  <!-- <div align="center">
     <a href="https://github.com/Kyuorhan/payflow/actions">
       <img src="https://github.com/Kyuorhan/payflow/workflows/Build%20and%20Deploy%20React%20Native/badge.svg" alt="Build Status">
     </a>
@@ -32,91 +26,123 @@
     <a href="#license">
       <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
     </a>
-  </div>
+  </div> -->
 </div>
 
----
+<br>
 
-## Sobre o Projeto
+## 💡 Sobre o Projeto
 
 O **PayFlow** é um aplicativo mobile desenvolvido para facilitar o gerenciamento de boletos. Com uma interface moderna e intuitiva, o app permite organizar, escanear e controlar todos os seus boletos em um só lugar.
 
 <div align="center">
 
-| Funcionalidade          | Descrição                                  |
-| ----------------------- | ------------------------------------------ |
-| **Scanner de Código**   | Escaneie códigos de barras automaticamente |
-| **Autenticação Google** | Login rápido e seguro                      |
-| **Dashboard Intuitivo** | Visão geral de todos os boletos            |
-| **Organização Smart**   | Categorize e filtre seus boletos           |
+### ✨ Principais Funcionalidades
+
+<table>
+<tbody>
+<tr>
+<td align="center" width="25%">
+🔍<br><strong>Scanner QR/Barcode</strong><br><sub>Escaneie códigos automaticamente</sub>
+</td>
+<td align="center" width="25%">
+🔐<br><strong>Auth Google</strong><br><sub>Login rápido e seguro</sub>
+</td>
+<td align="center" width="25%">
+📊<br><strong>Dashboard</strong><br><sub>Visão geral dos boletos</sub>
+</td>
+<td align="center" width="25%">
+🗂️<br><strong>Organização</strong><br><sub>Categorize e filtre</sub>
+</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 
-## Tecnologias
+## 🛠️ Stack Tecnológica
 
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="100">
-        <img src="./docs/assets/payflow-icon.svg" width="48" height="48" alt="PayFlow"><br>
-        <sub><b>PayFlow</b></sub>
+      <td align="center" width="120">
+        <img src="./assets/icons/payflow-icon.svg" width="56" height="56" alt="PayFlow"><br>
+        <sub><b>PayFlow</b></sub><br>
+        <sub><em>App Principal</em></sub>
       </td>
-      <td align="center" width="100">
-        <img src="./docs/assets/mobile-icon.svg" width="48" height="48" alt="React Native"><br>
-        <sub><b>React Native</b></sub>
+      <td align="center" width="120">
+        <img src="./assets/icons/react-native-icon.svg" width="56" height="56" alt="React Native"><br>
+        <sub><b>React Native</b></sub><br>
+        <sub><em>Framework</em></sub>
       </td>
-      <td align="center" width="100">
-        <img src="./docs/assets/typescript-icon.svg" width="48" height="48" alt="TypeScript"><br>
-        <sub><b>TypeScript</b></sub>
+      <td align="center" width="120">
+        <img src="./assets/icons/typescript-icon.svg" width="56" height="56" alt="TypeScript"><br>
+        <sub><b>TypeScript</b></sub><br>
+        <sub><em>Linguagem</em></sub>
       </td>
-      <td align="center" width="100">
-        <img src="./docs/assets/expo-icon.svg" width="48" height="48" alt="Expo"><br>
-        <sub><b>Expo SDK 53</b></sub>
+      <td align="center" width="120">
+        <img src="./assets/icons/expo-icon.svg" width="56" height="56" alt="Expo"><br>
+        <sub><b>Expo SDK 53</b></sub><br>
+        <sub><em>Toolchain</em></sub>
       </td>
-      <td align="center" width="100">
-        <img src="./docs/assets/figma-icon.svg" width="48" height="48" alt="Figma"><br>
-        <sub><b>Figma Design</b></sub>
+      <td align="center" width="120">
+        <img src="./assets/icons/figma-icon.svg" width="56" height="56" alt="Figma"><br>
+        <sub><b>Figma</b></sub><br>
+        <sub><em>Design</em></sub>
       </td>
     </tr>
   </table>
 </div>
 
-**Stack Principal:**
+**Arquitetura:**
 
-- Framework: React Native com Expo SDK 53
-- Linguagem: TypeScript para tipagem robusta
-- Navegação: Expo Router (file-based routing)
-- Build: EAS Build para iOS e Android
-- Design: Figma para prototipação e design system
+- 📱 **Framework**: React Native com Expo SDK 53
+- 📝 **Linguagem**: TypeScript para tipagem robusta
+- 🧭 **Navegação**: Expo Router (file-based routing)
+- 🔨 **Build**: EAS Build para iOS e Android
+- 🎨 **Design**: Figma para prototipação e design system
 
 ## 🚀 Início Rápido
 
 ### 📋 Pré-requisitos
 
-**Ambiente de Desenvolvimento:**
+<div align="center">
 
-```bash
-Node.js >= 18.0.0
-npm >= 9.0.0 ou yarn >= 1.22.0
-Git >= 2.30.0
+**Ambiente Base:**
+
+```
+Node.js ≥ 18.0.0    npm ≥ 9.0.0    Git ≥ 2.30.0
 ```
 
-**Para testar no dispositivo físico:**
+</div>
 
-| Método                      | Descrição                            | Requisitos                                                                                                                                |
-| --------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **Expo Go** _(Recomendado)_ | App gratuito para testar rapidamente | [📱 iOS](https://apps.apple.com/app/expo-go/id982107779) \| [🤖 Android](https://play.google.com/store/apps/details?id=host.exp.exponent) |
-| **Expo CLI**                | Desenvolvimento local completo       | `npm install -g @expo/cli@latest`                                                                                                         |
-| **EAS Build**               | Builds nativos de produção           | `npm install -g eas-cli@latest`                                                                                                           |
+**Opções de Desenvolvimento:**
 
-**Para builds nativos (opcional):**
+<div align="center">
+<table>
+<thead>
+<tr>
+<th width="33%">📱 Expo Go</th>
+<th width="33%">🔧 Local Dev</th>
+<th width="33%">🏗️ Native Build</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Teste instantâneo</td>
+<td>Controle total</td>
+<td>Apps produção</td>
+</tr>
+<tr>
+<td><a href="https://apps.apple.com/app/expo-go/id982107779">📱 iOS</a> | <a href="https://play.google.com/store/apps/details?id=host.exp.exponent">🤖 Android</a></td>
+<td><code>npm install -g @expo/cli</code></td>
+<td><code>npm install -g eas-cli</code></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-- **iOS**: macOS + Xcode 15+ (para executar em simulador)
-- **Android**: Android Studio + Java JDK 17 (para executar em emulador)
-
-### ⚡ Instalação e Execução
-
-**1. Clone e configure o projeto:**
+### ⚡ Instalação
 
 ```bash
 # Clone o repositório
@@ -126,36 +152,52 @@ cd payflow
 # Instale as dependências
 npm install
 
-# Inicie o servidor de desenvolvimento
+# Inicie o desenvolvimento
 npm start
 ```
 
-**2. Execute no seu dispositivo:**
+### 📱 Como Executar
 
-**📱 Expo Go (Mais rápido):**
+<div align="center">
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Comando</th>
+<th>Ideal para</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>📱 <strong>Expo Go</strong></td>
+<td>Escaneie QR Code</td>
+<td>Testes rápidos</td>
+</tr>
+<tr>
+<td>🍎 <strong>iOS Simulator</strong></td>
+<td><code>npm run ios</code></td>
+<td>Debug iOS</td>
+</tr>
+<tr>
+<td>🤖 <strong>Android Emulator</strong></td>
+<td><code>npm run android</code></td>
+<td>Debug Android</td>
+</tr>
+<tr>
+<td>🌐 <strong>Web Browser</strong></td>
+<td><code>npm run web</code></td>
+<td>Experimental</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-- Escaneie o QR Code que aparece no terminal
-- Abra automaticamente no app Expo Go
-
-**🔧 Build Local:**
-
-```bash
-# iOS (requer macOS + Xcode)
-npm run ios
-
-# Android (requer Android Studio + Java JDK)
-npm run android
-
-# Para testar no navegador (experimental)
-npm run web
-```
-
-**🎯 Dica:** Use o Expo Go para desenvolvimento rápido e builds locais apenas quando precisar testar funcionalidades nativas específicas.
+> **💡 Dica:** Use Expo Go para prototipagem rápida e builds locais para debugging detalhado.
 
 ## 🎨 Design & Protótipo
 
 <div align="center">
-  <img src="./docs/assets/figma-icon.svg" width="24" height="24" alt="Figma">
+  <img src="./assets/icon/figma-icon.svg" width="24" height="24" alt="Figma">
   <strong>Figma Community</strong>
 </div>
 
@@ -168,46 +210,16 @@ npm run web
 <br>
 
 <a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
-  <img src="./.github/Project.png" alt="PayFlow Design - Clique para abrir no Figma Community" width="100%" style="max-width: 800px;  border-radius: 12px; cursor: pointer;">
+  <img src="./.github/Project.svg" alt="PayFlow Design - Clique para abrir no Figma Community" width="100%" style="max-width: 800px; border: 2px solid #F24E1E; border-radius: 12px; cursor: pointer;">
 </a>
 
 <br>
 
 <em>👆 <strong>Clique na imagem acima para abrir o Figma Community</strong></em>
 
-<br><br>
-
-**💡 No Figma Community você pode:**
-
-- 👀 Visualizar o design completo
-- 🖱️ Interagir com o protótipo
-- 💬 Deixar comentários
-- 📋 Duplicar para sua conta
-- 🔍 Inspecionar componentes
-
-</div>
-
-</div>
-
-<!-- Fallback para dispositivos que não suportam iframe -->
-<details>
-<summary>� <strong>Não consegue ver o preview? Clique aqui</strong></summary>
-
 <br>
 
-Se o iframe não estiver funcionando no seu dispositivo ou navegador, use os links diretos acima para:
-
-- **🎨 Abrir no Figma**: Visualizar o arquivo completo
-- **🖱️ Modo Protótipo**: Interagir com o fluxo navegável
-- **🔧 Modo Design**: Ver componentes e especificações
-
-</details>
-
 </div>
-| **Header**     | `Header/Primary`  | Background: `#6C5CE7`, Height: `60px`              |
-| **Card**       | `Cards/Bill Card` | Radius: `8px`, Shadow: `0 2px 8px rgba(0,0,0,0.1)` |
-| **Button**     | `Buttons/Primary` | Background: `#6C5CE7`, Radius: `6px`               |
-| **Typography** | `Text/Heading`    | Font: `Roboto Medium`, Size: `16px`                |
 
 **🎨 Color Tokens**
 
@@ -221,24 +233,6 @@ Se o iframe não estiver funcionando no seu dispositivo ou navegador, use os lin
 </details>
 
 </div>
-
-### 🎯 Features do Design System
-
-| Feature                 | Descrição                                     | Status      |
-| ----------------------- | --------------------------------------------- | ----------- |
-| **🖼️ Design System**    | Componentes, cores e tipografia padronizados  | ✅ Completo |
-| **📱 Protótipo Mobile** | Fluxo navegável para iOS e Android            | ✅ Completo |
-| **🎯 Interações**       | Botões, transições e micro-animações          | ✅ Completo |
-| **📐 Specs Técnicas**   | Medidas e especificações para desenvolvimento | ✅ Completo |
-| **🎨 Components**       | Biblioteca de componentes reutilizáveis       | ✅ Completo |
-| **🌈 Color Palette**    | Paleta de cores com tokens de design          | ✅ Completo |
-
-### 📖 Como Usar o Design
-
-1. **Acesse o Figma Community**: [PayFlow Design System](https://www.figma.com/community/file/1352388163173966368/payflow)
-2. **Duplique o arquivo**: Clique em "Duplicate" para ter sua própria cópia
-3. **Explore os componentes**: Navegue pelas páginas e veja todos os elementos
-4. **Use no desenvolvimento**: Extraia assets, medidas e especificações
 
 ## Build para Produção
 
@@ -321,70 +315,7 @@ Este projeto foi **originalmente desenvolvido em Flutter & Dart** e posteriormen
 
 > **Código Flutter preservado na branch:** [`flutter-legacy`](https://github.com/Kyuorhan/payflow/tree/flutter-legacy)
 
-## Design & Figma
-
-<div align="center">
-  <img src="./docs/assets/figma-icon.svg" width="48" height="48" alt="Figma Design">
-  <br>
-  <strong>Design System & Prototipação</strong>
-</div>
-
-O PayFlow segue um design system completo criado no Figma, disponível como projeto da comunidade.
-
-### Navegação Interativa no Figma
-
-<div align="center">
-  <a href="https://www.figma.com/proto/1352388163173966368/payflow" target="_blank">
-    <img src="https://img.shields.io/badge/🎯_Protótipo_Interativo-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Protótipo Interativo">
-  </a>
-  
-  <br><br>
-  
-  <p>Experimente a navegação completa:</p>
-  
-  <table>
-    <tr>
-      <td>🖱️ <strong>Navegação por Cliques</strong></td>
-      <td>Clique nos hotspots para navegar</td>
-    </tr>
-    <tr>
-      <td>🔍 <strong>Zoom e Pan</strong></td>
-      <td>Explore os detalhes do design</td>
-    </tr>
-    <tr>
-      <td>📱 <strong>Preview Responsivo</strong></td>
-      <td>Teste em diferentes dispositivos</td>
-    </tr>
-    <tr>
-      <td>🎮 <strong>Interações</strong></td>
-      <td>Botões e formulários funcionais</td>
-    </tr>
-  </table>
-</div>
-
-### Links Figma
-
-- [📁 Arquivo da Comunidade](https://www.figma.com/community/file/1352388163173966368/payflow)
-- [🎯 Protótipo Interativo](https://www.figma.com/proto/1352388163173966368/payflow)
-- [📐 Design System](https://www.figma.com/file/1352388163173966368/payflow)
-
-**Documentação completa:** [Integração com Figma](./docs/figma-integration.md)
-
-## 🧪 Testes
-
-```bash
-# Executar todos os testes
-npm test
-
-# Testes em modo watch
-npm run test:watch
-
-# Cobertura de testes
-npm run test:coverage
-
-# Lint do código
-npm run lint
-```
+<br>
 
 ## 🤝 Contribuindo
 
