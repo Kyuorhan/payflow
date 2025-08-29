@@ -8,87 +8,59 @@
     Desenvolvido com React Native + Expo
   </p>
 
-  <div align="center">
-    <img src="https://img.shields.io/github/stars/Kyuorhan/payflow?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=FFD700" alt="GitHub Stars">
-    <img src="https://img.shields.io/github/forks/Kyuorhan/payflow?style=for-the-badge&logo=github&logoColor=white&labelColor=181717&color=0969DA" alt="GitHub Forks">
-    <img src="https://komarev.com/ghpvc/?username=payflow&repo=payflow&style=for-the-badge&color=0969DA" alt="Profile Views">
-  </div>
+  <p align="center">
+    <img alt="Stars" height="22em"  src="https://img.shields.io/github/stars/Kyuorhan/payflow?label=stars&message=MIT&color=000000&labelColor=8257e5">
+    <img alt="Forks" height="22em"  src="https://img.shields.io/github/forks/Kyuorhan/payflow?label=forks&message=MIT&color=000000&labelColor=8257e5" alt="Forks">     
+    <a href="https://github.com/Kyuorhan/payflow/blob/main/LICENSE">
+      <img alt="License" height="22em"  src="https://img.shields.io/static/v1?label=license&message=MIT&color=000000&labelColor=8257e5">
+    </a>
+  </p>
   
   <br>
-  
-  <!-- <div align="center">
-    <a href="https://github.com/Kyuorhan/payflow/actions">
-      <img src="https://github.com/Kyuorhan/payflow/workflows/Build%20and%20Deploy%20React%20Native/badge.svg" alt="Build Status">
-    </a>
-    <a href="https://www.figma.com/community/file/1352388163173966368/payflow">
-      <img src="https://img.shields.io/badge/Figma-Community-F24E1E?logo=figma&logoColor=white" alt="Figma Design">
-    </a>
-    <a href="#license">
-      <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
-    </a>
-  </div> -->
 </div>
 
 <br>
 
-## 💡 Sobre o Projeto
+### <h3 align="center">Sobre 📖</h3>
 
-O **PayFlow** é um aplicativo mobile desenvolvido para facilitar o gerenciamento de boletos. Com uma interface moderna e intuitiva, o app permite organizar, escanear e controlar todos os seus boletos em um só lugar.
+##
+
+O projeto **PayFlow** foi desenvolvido com o propósito de espalhar conhecimento na tecnologia. Além da intensa rotina de estudos, planejamentos, muitas conexões e networking, interagindo com várias comunidades.
+
+> - O **PayFlow** é um projeto elaborado e bem pensado para facilitar o Gerenciamento de Boletos, assim como **consultas**, ler o **Código de Barra** e gerenciar todos os boletos em um só lugar.
+
+> - O **PayFlow** se trata de um app mobile **migrado de Flutter & Dart** para **React Native + TypeScript** para Gerenciamento de Boletos, contendo recursos como o uso de **câmera para scanner**, **autenticação Google**, **navegação intuitiva**, **animações e estilizações personalizadas**, entre vários outros pontos modernos do desenvolvimento mobile.
+
+<br>
 
 <div align="center">
 
-### ✨ Principais Funcionalidades
+### 🛠️ Stack Tecnológica
 
-<table>
-<tbody>
-<tr>
-<td align="center" width="25%">
-🔍<br><strong>Scanner QR/Barcode</strong><br><sub>Escaneie códigos automaticamente</sub>
-</td>
-<td align="center" width="25%">
-🔐<br><strong>Auth Google</strong><br><sub>Login rápido e seguro</sub>
-</td>
-<td align="center" width="25%">
-📊<br><strong>Dashboard</strong><br><sub>Visão geral dos boletos</sub>
-</td>
-<td align="center" width="25%">
-🗂️<br><strong>Organização</strong><br><sub>Categorize e filtre</sub>
-</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-## 🛠️ Stack Tecnológica
+##
 
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="120">
+      <td align="center" width="120" height="100">
         <img src="./assets/icons/payflow-icon.svg" width="56" height="56" alt="PayFlow"><br>
         <sub><b>PayFlow</b></sub><br>
-        <sub><em>App Principal</em></sub>
       </td>
-      <td align="center" width="120">
+         <td align="center" width="120" height="100">
         <img src="./assets/icons/react-native-icon.svg" width="56" height="56" alt="React Native"><br>
         <sub><b>React Native</b></sub><br>
-        <sub><em>Framework</em></sub>
       </td>
-      <td align="center" width="120">
+      <td align="center" width="120" height="100">
         <img src="./assets/icons/typescript-icon.svg" width="56" height="56" alt="TypeScript"><br>
         <sub><b>TypeScript</b></sub><br>
-        <sub><em>Linguagem</em></sub>
       </td>
-      <td align="center" width="120">
+         <td align="center" width="120" height="100">
         <img src="./assets/icons/expo-icon.svg" width="56" height="56" alt="Expo"><br>
         <sub><b>Expo SDK 53</b></sub><br>
-        <sub><em>Toolchain</em></sub>
       </td>
-      <td align="center" width="120">
+         <td align="center" width="120" height="100">
         <img src="./assets/icons/figma-icon.svg" width="56" height="56" alt="Figma"><br>
         <sub><b>Figma</b></sub><br>
-        <sub><em>Design</em></sub>
       </td>
     </tr>
   </table>
@@ -210,7 +182,7 @@ npm start
 <br>
 
 <a href="https://www.figma.com/community/file/1352388163173966368/payflow" target="_blank">
-  <img src="./.github/Project.svg" alt="PayFlow Design - Clique para abrir no Figma Community" width="100%" style="max-width: 800px; border: 2px solid #F24E1E; border-radius: 12px; cursor: pointer;">
+  <img src="./.github/Project.svg" alt="PayFlow Design - Clique para abrir no Figma Community" width="100%" style="max-width: 800px;  border-radius: 12px; cursor: pointer;">
 </a>
 
 <br>
