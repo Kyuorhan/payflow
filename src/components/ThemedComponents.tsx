@@ -12,18 +12,18 @@ export function ThemedView({
   style,
   ...otherProps
 }: ThemedViewProps) {
-  const { background, shape } = useThemeColors();
+  const colors = useThemeColors();
 
   const getBackgroundColor = () => {
     switch (variant) {
       case "container":
-        return background;
+        return colors.background;
       case "card":
-        return shape;
+        return colors.shape;
       case "surface":
-        return shape;
+        return colors.shape;
       default:
-        return background;
+        return colors.background;
     }
   };
 
@@ -45,7 +45,7 @@ export function ThemedText({
   style,
   ...otherProps
 }: ThemedTextProps) {
-  const { heading, body, grey, primary } = useThemeColors();
+  const colors = useThemeColors();
 
   const getStyles = () => {
     switch (variant) {
@@ -53,36 +53,36 @@ export function ThemedText({
         return {
           fontSize: 24,
           fontWeight: "700" as const,
-          color: heading,
+          color: colors.heading,
         };
       case "subtitle":
         return {
           fontSize: 18,
           fontWeight: "600" as const,
-          color: heading,
+          color: colors.heading,
         };
       case "body":
         return {
           fontSize: 16,
           fontWeight: "400" as const,
-          color: body,
+          color: colors.body,
           lineHeight: 24,
         };
       case "caption":
         return {
           fontSize: 12,
           fontWeight: "400" as const,
-          color: grey,
+          color: colors.grey,
         };
       case "link":
         return {
           fontSize: 16,
           fontWeight: "500" as const,
-          color: primary,
+          color: colors.primary,
         };
       default:
         return {
-          color: body,
+          color: colors.body,
         };
     }
   };
@@ -101,7 +101,7 @@ export function ThemedCard({
   children,
   ...otherProps
 }: ThemedCardProps) {
-  const { shape, grey } = useThemeColors();
+  const colors = useThemeColors();
 
   const getCardStyles = () => {
     const baseStyles = {
