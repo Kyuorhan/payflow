@@ -6,3 +6,6 @@ export { MonoText } from "./StyledText";
 export { Text, View } from "./Themed";
 export { useClientOnlyValue } from "./useClientOnlyValue";
 export { useColorScheme } from "./useColorScheme";
+
+// 🎨 Componentes temáticos
+export { ThemedCard, ThemedText, ThemedView } from "./ThemedComponents";
